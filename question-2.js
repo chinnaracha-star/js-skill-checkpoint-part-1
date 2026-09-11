@@ -9,7 +9,7 @@ inventory.push({ name: "Orange", price: 20, quantity: 300 });
 
 let totals = 0;
 for (let i of inventory) {
-  totals = i.price * i.quantity;
+  totals += i.price * i.quantity;
   console.log(totals);
 }
 
