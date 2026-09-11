@@ -26,7 +26,7 @@ let calculateTotalPrice = (products, promotionCode) => {
   let salesPrice = 0;
 
   for (let totals of products) {
-    salesPrice += totals.price * totals.quantity;
+    salesPrice += totals.price * totals.quantity;}
     console.log(salesPrice);
 
     if (promotionCode === "SALE20") {
@@ -34,10 +34,10 @@ let calculateTotalPrice = (products, promotionCode) => {
     } else if (promotionCode === "SALE50") {
       salesPrice = salesPrice * 0.5;
     } else {
-      ("ไม่ได้รับส่วนลด");
+      console.log("ไม่ได้รับส่วนลด");
     }
     return salesPrice;
-  }
+  
 };
 
 let totalPrice = calculateTotalPrice(products, promotionCode);
