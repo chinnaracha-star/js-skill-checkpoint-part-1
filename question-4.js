@@ -24,5 +24,5 @@ let lowQuantity = checkLow(inventory);
 
 console.log(lowQuantity);
 console.log(
-  `สินค้าที่มีจำนวนต่ำที่สุดในคลังสินค้าคือ ${lowQuantity.name} : ซึ่งมี ${lowQuantity.quantity} ชิ้น`,
+  `สินค้าที่มีจำนวนต่ำที่สุดในคลังสินค้าคือ ${lowQuantity.name} ซึ่งมี ${lowQuantity.quantity} ชิ้น`,
 );
